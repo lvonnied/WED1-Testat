@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": "off",
+    "no-plusplus": "off",
+    "import/extensions": "off",
+    "object-curly-newline": "off",
+    "object-curly-spacing": "off",
+    "@web-and-design/wed/no-while": "warn",
+    "@web-and-design/wed/use-action-map": "warn",
+    "@web-and-design/wed/check-html-gen": "warn"
+  },
+  "plugins": [
+    "@web-and-design/eslint-plugin-wed"
+  ]
+}

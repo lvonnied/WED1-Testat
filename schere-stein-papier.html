@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Schere Stein Papier</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <script src="scripts/main.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.11/purify.min.js"></script>
+</head>
+<body>
+<div class="Startseite">
+  <button id="change_to_server_button">Wechsle zu Server</button>
+  <h1>Rangliste</h1>
+  <ul id="rangliste"></ul>
+  <hr class="solid">
+  <p>Starten Sie ein neues Spiel</p>
+  <form id="nameForm">
+    <label for="nameInput">Name</label>
+    <input type="text" id="nameInput" name="nameInput" required>
+    <button id="startGame" type="submit">Spiel Starten</button>
+  </form>
+</div>
+
+<div class="Game">
+  <p id="nameOutput"><b>NAME!</b> Wähle deine Hand!</p>
+
+  <div class="buttonContainer">
+    <button class="selection" id="Schere" data-value="Schere">Schere</button>
+    <button class="selection" id="Stein" data-value="Stein">Stein</button>
+    <button class="selection" id="Papier" data-value="Papier">Papier</button>
+    <button class="selection" id="Brunnen" data-value="Brunnen">Brunnen</button>
+    <button class="selection" id="Streichholz" data-value="Streichholz">Streichholz</button>
+  </div>
+
+  <p id="nextRound">VS</p>
+
+  <div class="buttonContainer">
+    <p id="enemyHand">?</p>
+  </div>
+  <button id="returnHome">Zurück zum Ranking</button>
+
+  <hr class="solid">
+
+  <table id="history">
+    <tr>
+      <th>Resultat</th>
+      <th>Spieler</th>
+      <th>Gegner</th>
+    </tr>
+  </table>
+
+</div>
+
+</body>
+</html>
